@@ -15,6 +15,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 #input_urls /Users/amitpawar/code/warc/urls.txt
 #output_location s3://bq-dev-ss-data/daily_data/warc_poc/
 # Argument parsing setup
+
 parser = argparse.ArgumentParser(description='Process URLs and store them in WARC format in a specified location.')
 parser.add_argument('--input_urls', required=True, help='File containing URLs or a comma-separated string of URLs')
 parser.add_argument('--output_location', required=True, help='Output location for the WARC files, either a local path or an S3 bucket (e.g., file://path/to/dir or s3://bucket-name)')
